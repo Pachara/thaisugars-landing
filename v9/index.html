@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ขายส่งน้ำตาลทราย ราคาโรงงาน จัดส่งทั่วประเทศ — บุ่นเส่ง ไทยชูการ์ โทร 088-828-2899">
+<title>น้ำตาลทราย.com — Sugar Command Center</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{
+r:{DEFAULT:'#C42718',deep:'#8B1A10',darker:'#5C1008',light:'#E84A3C'},
+bk:'#0C0C0C',bk2:'#141414',bk3:'#1E1E1E',
+gl:'#C8A83E',gll:'#E8D48A',
+cr:'#F0E8D0',cr2:'#E0D4B8'
+},fontFamily:{t:['"SukhumvitSet"','"Noto Sans Thai"','sans-serif']}}}};
+</script>
+<style>
+@font-face{font-family:"SukhumvitSet";font-weight:400;src:url('fonts/SukhumvitSet-Text.woff2') format('woff2');font-display:swap}
+@font-face{font-family:"SukhumvitSet";font-weight:700;src:url('fonts/SukhumvitSet-Bold.woff2') format('woff2');font-display:swap}
+*{font-family:"SukhumvitSet","Noto Sans Thai",sans-serif!important}
+::selection{background:rgba(200,168,62,.3);color:#fff}
+html{scroll-snap-type:y mandatory;overflow-y:scroll}
+/* Scene */
+.scene{min-height:100vh;scroll-snap-align:start;display:flex;align-items:center;position:relative;overflow:hidden;padding:40px 24px}
+/* Progress bar */
+#prog{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,#C42718,#C8A83E);z-index:999;width:0%;transition:width .15s}
+/* Expand panel */
+.expand-content{max-height:0;overflow:hidden;transition:max-height .5s cubic-bezier(.16,1,.3,1)}
+.expand-content.open{max-height:600px}
+.expand-trigger{cursor:pointer}
+.expand-trigger:hover{opacity:.85}
+/* Reveal */
+.rv{opacity:0;transform:translateY(20px);transition:all .8s cubic-bezier(.16,1,.3,1)}.rv.v{opacity:1;transform:none}
+/* Glow */
+.glow-r{box-shadow:0 0 60px rgba(196,39,24,.15)}
+.glow-g{box-shadow:0 0 40px rgba(200,168,62,.1)}
+</style>
+</head>
+<body class="bg-bk text-cr" style="background:#0C0C0C">
+
+<!-- Skip nav -->
+<a href="#hero" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[999] focus:bg-r focus:text-white focus:px-4 focus:py-2 focus:rounded">ข้ามไปยังเนื้อหาหลัก</a>
+
+<!-- Progress bar -->
+<div id="prog"></div>
+
+<!-- Fixed phone -->
+<a href="tel:0888282899" class="fixed top-4 right-4 z-50 bg-r hover:bg-r-deep text-white font-bold px-5 py-2 rounded-full shadow-xl shadow-r/30 transition text-sm">&#9742; 088-828-2899</a>
+
+<!-- ═══ SCENE 1: HERO — Deep red gradient ═══ -->
+<section class="scene bg-gradient-to-br from-r-deep via-r to-r-darker" id="hero">
+<img src="images/v9-hero.jpg" alt="ผลึกน้ำตาลทรายขาวบริสุทธิ์ระยะใกล้" class="absolute inset-0 w-full h-full object-cover opacity-15 mix-blend-overlay">
+<div class="max-w-[1000px] mx-auto w-full rv relative z-10">
+<p class="text-cr/50 text-sm tracking-[.4em] uppercase mb-4">บุ่นเส่ง ไทยชูการ์ จำกัด · ประสบการณ์ 40+ ปี</p>
+<h1 class="text-6xl sm:text-7xl lg:text-8xl font-bold text-white leading-[.9] mb-4 tracking-tight">น้ำตาล<br>ทราย<span class="text-gl">.</span>com</h1>
+<p class="text-xl text-cr/70 max-w-lg mb-8 leading-relaxed">ขายส่งน้ำตาลทรายราคาโรงงาน จัดส่งทั่วประเทศ<br>สั่งขั้นต่ำ 8 ตัน · เก็บเงินปลายทาง · ราคาโรงงาน</p>
+<div class="flex gap-4 flex-wrap">
+<a href="tel:0888282899" class="bg-white text-r font-bold px-8 py-4 rounded-xl text-lg transition hover:-translate-y-1 shadow-xl">&#9742; โทรสั่ง 088-828-2899</a>
+<a href="https://line.me/R/ti/p/~peter_nohng" target="_blank" rel="noopener" class="border-2 border-white/30 text-white hover:bg-white/10 px-7 py-4 rounded-xl text-base transition">LINE: peter_nohng</a>
+</div>
+<div class="flex gap-10 mt-12 flex-wrap">
+<div><div class="text-4xl font-bold text-white" data-c="40">0</div><div class="text-sm text-cr/40">ปีประสบการณ์</div></div>
+<div><div class="text-4xl font-bold text-gl" data-c="58">0</div><div class="text-sm text-cr/40">โรงงาน</div></div>
+<div><div class="text-4xl font-bold text-white" data-c="77">0</div><div class="text-sm text-cr/40">จังหวัด</div></div>
+<div><div class="text-4xl font-bold text-gll" data-c="10">0</div><div class="text-sm text-cr/40">ล้านตัน/ปี</div></div>
+</div>
+</div>
+</section>
+
+<!-- ═══ SCENE 2: WHO WE ARE — Black ═══ -->
+<section class="scene bg-bk">
+<div class="max-w-[1000px] mx-auto w-full rv">
+<p class="text-r text-sm tracking-[.3em] uppercase mb-2">Scene 02</p>
+<h2 class="text-4xl font-bold text-white mb-3">บุ่นเส่ง ไทยชูการ์</h2>
+<p class="text-r-light font-bold text-lg mb-6">มุ่งมั่นพัฒนา คู่ค้าคือหัวใจ</p>
+<p class="text-base text-cr/60 leading-relaxed max-w-2xl mb-8">เชี่ยวชาญงานขนส่ง กระจายสินค้า จัดหาบุคลากร และทำการตลาดน้ำตาลทรายมากกว่า 40 ปี จำหน่ายน้ำตาลทรายไทยจากโรงงาน คิดราคาตามระยะทาง ส่งถึงมือลูกค้า ใช้เทคโนโลยี PDA เก็บสถิติ GPS เรียลไทม์ ประมวลผลรายงานรายเดือนแยกตามจังหวัดและระดับภาค</p>
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+<div class="bg-bk2 border border-white/5 rounded-xl p-5 glow-r hover:border-r/20 transition"><div class="text-2xl mb-2">&#128666;</div><h3 class="text-base font-bold text-white mb-1">ส่งถึงที่</h3><p class="text-sm text-cr/50">จากโรงงานถึงหน้าร้าน 3-5 วัน คิดค่าขนส่งตามระยะทางจริง</p></div>
+<div class="bg-bk2 border border-white/5 rounded-xl p-5 glow-r hover:border-r/20 transition"><div class="text-2xl mb-2">&#128230;</div><h3 class="text-base font-bold text-white mb-1">ขั้นต่ำ 8 ตัน</h3><p class="text-sm text-cr/50">เต็มรถ 6 ล้อ = 160 กระสอบ 50 กก. จัดหารถเองได้</p></div>
+<div class="bg-bk2 border border-white/5 rounded-xl p-5 glow-r hover:border-r/20 transition"><div class="text-2xl mb-2">&#128176;</div><h3 class="text-base font-bold text-white mb-1">เก็บเงินปลายทาง</h3><p class="text-sm text-cr/50">โอนเมื่อรถถึงโรงงาน ก่อนโหลดสินค้าขึ้นรถ</p></div>
+<div class="bg-bk2 border border-white/5 rounded-xl p-5 glow-r hover:border-r/20 transition"><div class="text-2xl mb-2">&#127981;</div><h3 class="text-base font-bold text-white mb-1">ราคาโรงงาน</h3><p class="text-sm text-cr/50">ตรงจากผู้ผลิต ไม่ผ่านคนกลาง รวมค่าบริการ</p></div>
+</div>
+</div>
+</section>
+
+<!-- ═══ SCENE 3: THE SUGAR — Deep red ═══ -->
+<section class="scene bg-r-deep">
+<div class="max-w-[1000px] mx-auto w-full rv">
+<p class="text-white/30 text-sm tracking-[.3em] uppercase mb-2">Scene 03</p>
+<h2 class="text-4xl font-bold text-white mb-2">ประเภทน้ำตาลทราย</h2>
+<p class="text-base text-cr/50 mb-6">คลิกเพื่อดูรายละเอียด · แบ่งตามค่า ICUMSA</p>
+<div class="grid lg:grid-cols-3 gap-4">
+<!-- W1 -->
+<div class="bg-white/10 backdrop-blur border border-white/10 rounded-2xl overflow-hidden hover:bg-white/15 transition">
+<img src="images/refined.png" alt="น้ำตาลทรายขาวบริสุทธิ์ W1 ผลึกขาวใส" class="w-full h-28 object-cover opacity-40" loading="lazy">
+<div class="p-5 expand-trigger" onclick="this.nextElementSibling.classList.toggle('open')">
+<div class="flex justify-between items-start mb-2"><span class="bg-white/20 text-white text-sm font-bold px-3 py-1 rounded-lg">W1</span><span class="text-3xl font-bold text-gl">25<span class="text-sm text-white/40 ml-1">฿/กก.</span></span></div>
+<h3 class="text-xl font-bold text-white">น้ำตาลทรายขาวบริสุทธิ์</h3>
+<p class="text-sm text-white/50 mt-1">ICUMSA ≤ 45 · Refined Sugar · คลิกดูเพิ่ม ↓</p>
+</div>
+<div class="expand-content"><div class="px-5 pb-5 text-sm text-white/60 leading-relaxed space-y-2">
+<p>คุณภาพสูงสุด ผลึกสีขาวใส ซูโครส 99.8%+ ปราศจากรสชาติอื่น นิยมส่งออก เหมาะทำน้ำเชื่อม เครื่องดื่ม แปรรูป อุตสาหกรรมยา เครื่องสำอาง</p>
+<div class="grid grid-cols-2 gap-2 text-sm"><span class="bg-white/5 rounded px-2 py-1">Polar ≥99.9%</span><span class="bg-white/5 rounded px-2 py-1">Moisture ≤0.04%</span><span class="bg-white/5 rounded px-2 py-1">Particle 0.40-0.80mm</span><span class="bg-white/5 rounded px-2 py-1 text-gll font-bold">ICUMSA ≤ 45</span></div>
+</div></div>
+</div>
+<!-- W2 -->
+<div class="bg-white/10 backdrop-blur border border-white/10 rounded-2xl overflow-hidden hover:bg-white/15 transition">
+<img src="images/white.png" alt="น้ำตาลทรายขาวธรรมดา W2 หวานสะอาด" class="w-full h-28 object-cover opacity-40" loading="lazy">
+<div class="p-5 expand-trigger" onclick="this.nextElementSibling.classList.toggle('open')">
+<div class="flex justify-between items-start mb-2"><span class="bg-gl/20 text-gl text-sm font-bold px-3 py-1 rounded-lg">W2</span><span class="text-3xl font-bold text-white">24<span class="text-sm text-white/40 ml-1">฿/กก.</span></span></div>
+<h3 class="text-xl font-bold text-white">น้ำตาลทรายขาวธรรมดา</h3>
+<p class="text-sm text-white/50 mt-1">ICUMSA 46-200 · White Sugar · คลิกดูเพิ่ม ↓</p>
+</div>
+<div class="expand-content"><div class="px-5 pb-5 text-sm text-white/60 leading-relaxed space-y-2">
+<p>แทบแยกจาก W1 ไม่ได้ หวานสะอาดคงที่ ราคาย่อมเยากว่า นิยมมากที่สุดในไทย เหมาะร้านอาหาร ครัวเรือน เบเกอรี่ ร้านกาแฟ โรงงานอาหาร</p>
+<div class="grid grid-cols-2 gap-2 text-sm"><span class="bg-white/5 rounded px-2 py-1">Polar ≥99.8%</span><span class="bg-white/5 rounded px-2 py-1">Moisture ≤0.05%</span><span class="bg-white/5 rounded px-2 py-1">Particle 0.40-0.90mm</span><span class="bg-white/5 rounded px-2 py-1">ICUMSA 46-200</span></div>
+</div></div>
+</div>
+<!-- W3 -->
+<div class="bg-white/10 backdrop-blur border border-white/10 rounded-2xl overflow-hidden hover:bg-white/15 transition">
+<img src="images/brown.png" alt="น้ำตาลทรายแดง W3 หวานหอมคาราเมล" class="w-full h-28 object-cover opacity-40" loading="lazy">
+<div class="p-5 expand-trigger" onclick="this.nextElementSibling.classList.toggle('open')">
+<div class="flex justify-between items-start mb-2"><span class="bg-orange-500/20 text-orange-300 text-sm font-bold px-3 py-1 rounded-lg">W3</span><span class="text-sm text-white/40">ราคาตามตลาด</span></div>
+<h3 class="text-xl font-bold text-white">น้ำตาลทรายแดง</h3>
+<p class="text-sm text-white/50 mt-1">ICUMSA ≥ 1,200 · Brown Sugar · คลิกดูเพิ่ม ↓</p>
+</div>
+<div class="expand-content"><div class="px-5 pb-5 text-sm text-white/60 leading-relaxed space-y-2">
+<p>หวานหอมกากน้ำตาล (โมลาส) กลิ่นคาราเมล ชุ่มชื้น สีทองแดง เหมาะขนมไทย ซีอิ๊ว ของหวาน ซอส น้ำเต้าหู้ เชื่อมผลไม้ เบเกอรี่ ชีวจิต</p>
+<div class="grid grid-cols-2 gap-2 text-sm"><span class="bg-white/5 rounded px-2 py-1">Polar ≥99.2%</span><span class="bg-white/5 rounded px-2 py-1">Moisture ≤0.20%</span><span class="bg-white/5 rounded px-2 py-1">Particle 0.75-1.10mm</span><span class="bg-white/5 rounded px-2 py-1 text-orange-300">ICUMSA ≥1,200</span></div>
+</div></div>
+</div>
+</div>
+<p class="text-sm text-white/25 mt-4 italic text-center">ราคาหน้าโรงงาน ฤดู 68/69 ไม่รวม VAT · สอน. 7 พ.ย. 2568</p>
+</div>
+</section>
+
+<!-- ═══ SCENE 4: THE NUMBERS — Black scoreboard ═══ -->
+<section class="scene bg-bk">
+<div class="max-w-[1000px] mx-auto w-full rv">
+<p class="text-r text-sm tracking-[.3em] uppercase mb-2">Scene 04</p>
+<h2 class="text-4xl font-bold text-white mb-6">ตัวเลขที่สำคัญ</h2>
+<div class="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+<div class="bg-bk2 border border-white/5 rounded-xl p-5 text-center glow-g"><div class="text-5xl font-bold text-gl">10.58</div><div class="text-sm text-cr/40 mt-1">ล้านตัน ผลผลิตน้ำตาล</div></div>
+<div class="bg-bk2 border border-white/5 rounded-xl p-5 text-center"><div class="text-5xl font-bold text-r-light">97.45<span class="text-xl">%</span></div><div class="text-sm text-cr/40 mt-1">อ้อยสดไม่เผา (ประวัติการณ์)</div></div>
+<div class="bg-bk2 border border-white/5 rounded-xl p-5 text-center"><div class="text-5xl font-bold text-green-400">+37.3<span class="text-xl">%</span></div><div class="text-sm text-cr/40 mt-1">ส่งออก 9M/2568</div></div>
+</div>
+<div class="bg-bk2 border border-white/5 rounded-xl p-6 text-base text-cr/50 leading-relaxed space-y-3">
+<p><strong class="text-white">ฤดูหีบ 2025/26:</strong> 58 โรงงานเต็มกำลัง หีบวันละ 1.18 ล้านตัน อ้อยรวม 96-98 ล้านตัน ผลผลิตเฉลี่ย 108.88 กก./ตันอ้อย (+14.4%) หลังเอลนีโญคลี่คลาย</p>
+<p><strong class="text-white">การส่งออก:</strong> 9M/68 เพิ่ม 37.3% มูลค่าเพิ่ม 16.7% ตลาดหลัก: อินโดนีเซีย (+76.7%), เกาหลีใต้ (+32.2%) คาดทั้งปี 3.6 พันล้าน USD</p>
+<p><strong class="text-white">แนวโน้ม 2026/27:</strong> อาจลดเหลือ 86 ล้านตันอ้อย จากโรคใบขาว เกษตรกรหันปลูกมันสำปะหลัง ขาดแรงงาน</p>
+<p class="text-sm text-cr/25 italic">SCB EIC, Krungsri, USDA, ISO — มี.ค. 2569</p>
+</div>
+</div>
+</section>
+
+<!-- ═══ SCENE 5: THE FLEET — Deep red ═══ -->
+<section class="scene bg-r-deep">
+<div class="max-w-[1000px] mx-auto w-full rv">
+<p class="text-white/30 text-sm tracking-[.3em] uppercase mb-2">Scene 05</p>
+<h2 class="text-4xl font-bold text-white mb-4">ยี่ห้อ · ขนส่ง · บริการ</h2>
+<div class="grid grid-cols-2 gap-3 mb-5"><img src="images/v9-truck.jpg" alt="รถขนส่งน้ำตาลทรายจัดส่งทั่วประเทศ" class="w-full h-32 object-cover rounded-xl opacity-50" loading="lazy"><img src="images/v9-factory.jpg" alt="โรงงานผลิตน้ำตาลทรายในประเทศไทย" class="w-full h-32 object-cover rounded-xl opacity-50" loading="lazy"></div>
+<!-- Brands -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-5">
+<div class="bg-white/8 border border-white/10 rounded-lg p-3"><h4 class="text-base font-bold text-white">มิตรผล</h4><p class="text-sm text-white/40">ICUMSA 40 · Polar 99.9%</p></div>
+<div class="bg-white/8 border border-white/10 rounded-lg p-3"><h4 class="text-base font-bold text-white">TRR / ษฎา / ลิน</h4><p class="text-sm text-white/40">ก่อตั้ง 2489 · 0.60-0.90mm</p></div>
+<div class="bg-white/8 border border-white/10 rounded-lg p-3"><h4 class="text-base font-bold text-white">KSL นิวกรุงไทย</h4><p class="text-sm text-white/40">ICUMSA 50-80 · Polar 99.8%</p></div>
+<div class="bg-white/8 border border-white/10 rounded-lg p-3"><h4 class="text-base font-bold text-white">ตะวัน (โคราช)</h4><p class="text-sm text-white/40">ICUMSA 40-100 · 0.40-0.70mm</p></div>
+<div class="bg-white/8 border border-white/10 rounded-lg p-3"><h4 class="text-base font-bold text-white">วังขนาย</h4><p class="text-sm text-white/40">กาญจนบุรี · 50กก./1กก.</p></div>
+<div class="bg-white/8 border border-r/20 rounded-lg p-3"><h4 class="text-base font-bold text-gll">+ อื่นๆ</h4><p class="text-sm text-white/40">เอราวัณ · รักษ์โลก · KBS · TSM · ระยอง · บุรีรัมย์</p></div>
+</div>
+<!-- Transport -->
+<div class="overflow-x-auto rounded-xl border border-white/10 mb-5">
+<table class="w-full text-sm"><thead><tr class="bg-white/5"><th class="px-4 py-3 text-left text-white/50 text-sm">รถ</th><th class="px-4 py-3 text-white/50">ตัน</th><th class="px-4 py-3 text-white/50">50กก.</th><th class="px-4 py-3 text-white/50">25กก.</th><th class="px-4 py-3 text-white/50">พาเลท</th></tr></thead>
+<tbody class="text-white/60"><tr class="border-t border-white/5 hover:bg-white/5 transition"><td class="px-4 py-2 text-white font-bold">6 ล้อ</td><td class="px-4 py-2 text-center">8</td><td class="px-4 py-2 text-center">160</td><td class="px-4 py-2 text-center">320</td><td class="px-4 py-2 text-center text-white/20">—</td></tr>
+<tr class="border-t border-white/5 hover:bg-white/5 transition"><td class="px-4 py-2 text-white font-bold">10 ล้อ</td><td class="px-4 py-2 text-center">17</td><td class="px-4 py-2 text-center">340</td><td class="px-4 py-2 text-center">680</td><td class="px-4 py-2 text-center text-white/20">—</td></tr>
+<tr class="border-t border-white/5 hover:bg-white/5 transition"><td class="px-4 py-2 text-white font-bold">เทรลเลอร์</td><td class="px-4 py-2 text-center">32</td><td class="px-4 py-2 text-center">640</td><td class="px-4 py-2 text-center">1,280</td><td class="px-4 py-2 text-center">1,200</td></tr></tbody></table>
+</div>
+<!-- Services -->
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+<div class="bg-white/8 border border-white/10 rounded-lg p-3 text-center"><div class="text-gll font-bold text-sm">&#128200; เช็คราคา</div><p class="text-sm text-white/30">รีลไทม์ทุกสัปดาห์</p></div>
+<div class="bg-white/8 border border-white/10 rounded-lg p-3 text-center"><div class="text-white font-bold text-sm">&#127915; ซื้อ-ขายตั๋ว</div><p class="text-sm text-white/30">สิทธิ์ขนน้ำตาล</p></div>
+<div class="bg-white/8 border border-white/10 rounded-lg p-3 text-center"><div class="text-gll font-bold text-sm">&#128666; ขนส่ง</div><p class="text-sm text-white/30">รถตู้ทึบทั่วไทย</p></div>
+<div class="bg-white/8 border border-white/10 rounded-lg p-3 text-center"><div class="text-white font-bold text-sm">&#127978; ทำตลาด</div><p class="text-sm text-white/30">PDA + GPS 40+ ปี</p></div>
+</div>
+</div>
+</section>
+
+<!-- ═══ SCENE 6: THE PROCESS — Black ═══ -->
+<section class="scene bg-bk">
+<div class="max-w-[1000px] mx-auto w-full rv">
+<p class="text-r text-sm tracking-[.3em] uppercase mb-2">Scene 06</p>
+<h2 class="text-4xl font-bold text-white mb-6">วิธีสั่งซื้อ · 5 ขั้นตอน</h2>
+<div class="grid grid-cols-2 md:grid-cols-5 gap-3">
+<div class="bg-bk2 border border-white/5 rounded-xl p-4 text-center hover:border-r/20 transition expand-trigger" onclick="this.querySelector('.exp').classList.toggle('open')"><div class="w-12 h-12 rounded-full bg-r text-white font-bold flex items-center justify-center mx-auto mb-3 text-xl">1</div><h3 class="text-base font-bold text-white mb-1">โทร/LINE</h3><div class="exp expand-content"><p class="text-sm text-cr/50 mt-2">โทร 088-828-2899 หรือ LINE peter_nohng แจ้งยี่ห้อ ประเภท จำนวน จังหวัด</p></div></div>
+<div class="bg-bk2 border border-white/5 rounded-xl p-4 text-center hover:border-r/20 transition md:mt-8 expand-trigger" onclick="this.querySelector('.exp').classList.toggle('open')"><div class="w-12 h-12 rounded-full bg-r text-white font-bold flex items-center justify-center mx-auto mb-3 text-xl">2</div><h3 class="text-base font-bold text-white mb-1">แจ้งจำนวน</h3><div class="exp expand-content"><p class="text-sm text-cr/50 mt-2">ขั้นต่ำ 8 ตัน = 160 กระสอบ 50 กก. แจ้งที่อยู่จัดส่ง</p></div></div>
+<div class="bg-bk2 border border-white/5 rounded-xl p-4 text-center hover:border-r/20 transition expand-trigger" onclick="this.querySelector('.exp').classList.toggle('open')"><div class="w-12 h-12 rounded-full bg-r text-white font-bold flex items-center justify-center mx-auto mb-3 text-xl">3</div><h3 class="text-base font-bold text-white mb-1">ทะเบียนรถ</h3><div class="exp expand-content"><p class="text-sm text-cr/50 mt-2">แจ้งทะเบียนรถ + เบอร์คนขับที่จะเข้ารับที่โรงงาน</p></div></div>
+<div class="bg-bk2 border border-white/5 rounded-xl p-4 text-center hover:border-r/20 transition md:mt-8 expand-trigger" onclick="this.querySelector('.exp').classList.toggle('open')"><div class="w-12 h-12 rounded-full bg-r text-white font-bold flex items-center justify-center mx-auto mb-3 text-xl">4</div><h3 class="text-base font-bold text-white mb-1">โอนเงิน</h3><div class="exp expand-content"><p class="text-sm text-cr/50 mt-2">โอนเต็มจำนวนเมื่อรถถึงโรงงาน ก่อนโหลด (บางที่ล่วงหน้า 1 วัน)</p></div></div>
+<div class="bg-bk2 border border-green-500/15 rounded-xl p-4 text-center hover:border-green-500/30 transition expand-trigger" onclick="this.querySelector('.exp').classList.toggle('open')"><div class="w-12 h-12 rounded-full bg-green-600 text-white font-bold flex items-center justify-center mx-auto mb-3 text-xl">&#10003;</div><h3 class="text-base font-bold text-white mb-1">โหลดสินค้า</h3><div class="exp expand-content"><p class="text-sm text-cr/50 mt-2">โรงงานโหลดน้ำตาลใส่รถ ตรวจนับครบ เสร็จ!</p></div></div>
+</div>
+</div>
+</section>
+
+<!-- ═══ SCENE 7: THE HUB — Deep red ═══ -->
+<section class="scene bg-r-deep" style="align-items:start;padding-top:60px">
+<div class="max-w-[1000px] mx-auto w-full rv">
+<p class="text-white/30 text-sm tracking-[.3em] uppercase mb-2">Scene 07</p>
+<h2 class="text-4xl font-bold text-white mb-6">ติดต่อ · ข้อมูล · ข่าวสาร</h2>
+<div class="grid lg:grid-cols-3 gap-4 mb-6">
+<!-- Contact -->
+<div class="bg-white/8 border border-white/10 rounded-xl p-5 space-y-3">
+<h3 class="text-base font-bold text-white mb-2">ติดต่อสั่งซื้อ</h3>
+<div class="flex gap-2 items-center"><span class="text-r-light">&#9742;</span><a href="tel:0888282899" class="text-xl font-bold text-gl">088-828-2899</a></div>
+<div class="flex gap-2 items-center"><span class="text-green-400">&#128172;</span><a href="https://line.me/R/ti/p/~peter_nohng" target="_blank" rel="noopener" class="text-base text-white hover:text-gl transition">LINE: peter_nohng</a></div>
+<div class="flex gap-2 items-start"><span class="text-r-light">&#128205;</span><span class="text-sm text-white/50">157/1 หมู่ 4 ต.หนองกินเพล อ.วารินชำราบ จ.อุบลราชธานี</span></div>
+<div class="flex gap-2 items-center"><span class="text-blue-400">&#127760;</span><span class="text-sm text-white/50">FB · IG @thaisugars · กลุ่มซื้อ-ขาย</span></div>
+</div>
+<!-- About -->
+<div class="bg-white/8 border border-white/10 rounded-xl p-5 text-sm text-white/50 space-y-2">
+<h3 class="text-base font-bold text-white mb-2">ข้อมูลบริษัท</h3>
+<div class="flex justify-between py-1 border-b border-white/5"><span>บริษัท</span><span class="text-white/70">บุ่นเส่ง ไทยชูการ์ จำกัด</span></div>
+<div class="flex justify-between py-1 border-b border-white/5"><span>เลขภาษี</span><span class="text-white/70">0343551001127</span></div>
+<div class="flex justify-between py-1 border-b border-white/5"><span>ติดต่อ</span><span class="text-white/70">เฮียโหน่ง</span></div>
+<div class="flex justify-between py-1 border-b border-white/5"><span>เวลา</span><span class="text-white/70">จ.-ส. 08:00-18:00</span></div>
+<div class="py-1"><span class="text-r-light italic">"มุ่งมั่นพัฒนา คู่ค้าคือหัวใจ"</span></div>
+</div>
+<!-- Blog -->
+<div class="space-y-3">
+<h3 class="text-base font-bold text-white mb-2">ข่าวล่าสุด</h3>
+<div class="bg-white/8 border border-white/10 rounded-lg p-3"><p class="text-sm text-r-light mb-0.5">27/03/69</p><h4 class="text-sm font-bold text-white leading-snug">แนวโน้มอุตสาหกรรมน้ำตาลไทย ปี 2568 — ผลผลิตเพิ่ม 14.4%</h4></div>
+<div class="bg-white/8 border border-white/10 rounded-lg p-3"><p class="text-sm text-r-light mb-0.5">25/03/69</p><h4 class="text-sm font-bold text-white leading-snug">สถานการณ์อ้อยและน้ำตาลโลก ไทย-ฟิลิปปินส์-อินเดีย</h4></div>
+<div class="bg-white/8 border border-white/10 rounded-lg p-3"><p class="text-sm text-gl mb-0.5">20/03/69</p><h4 class="text-sm font-bold text-white leading-snug">9 ชนิดของน้ำตาล รู้จักน้ำตาลหลากชนิด</h4></div>
+</div>
+</div>
+<!-- Map -->
+<iframe title="แผนที่ บุ่นเส่ง ไทยชูการ์ จำกัด" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3836.5!2d104.807!3d15.183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTXCsDEwJzU4LjciTiAxMDTCsDQ4JzI1LjUiRQ!5e0!3m2!1sth!2sth!4v1" width="100%" height="180" style="border:0;border-radius:12px;filter:brightness(.7)" allowfullscreen loading="lazy"></iframe>
+</div>
+</section>
+
+<!-- ═══ SCENE 8: FINALE — Giant phone ═══ -->
+<section class="scene bg-bk flex items-center justify-center text-center">
+<div class="rv">
+<p class="text-r text-sm tracking-[.4em] uppercase mb-4">สนใจสั่งซื้อน้ำตาลทราย?</p>
+<a href="tel:0888282899" class="text-6xl sm:text-7xl lg:text-8xl font-bold text-white hover:text-gl transition block mb-4">088-828-2899</a>
+<p class="text-xl text-cr/40 mb-6">โทรสั่งเลยวันนี้ · จัดส่งตรงจากโรงงาน · ราคาโรงงาน</p>
+<div class="flex gap-4 justify-center flex-wrap">
+<a href="tel:0888282899" class="bg-r hover:bg-r-deep text-white font-bold px-8 py-4 rounded-xl text-lg transition shadow-xl shadow-r/30">&#9742; โทรสั่ง</a>
+<a href="https://line.me/R/ti/p/~peter_nohng" target="_blank" rel="noopener" class="border-2 border-white/20 text-white/70 hover:text-white hover:border-white/40 px-7 py-4 rounded-xl text-base transition">LINE: peter_nohng</a>
+</div>
+<div class="mt-8 text-sm text-cr/20">&copy; 2569 บริษัท บุ่นเส่ง ไทยชูการ์ จำกัด — น้ำตาลทราย.com</div>
+</div>
+</section>
+
+<!-- Mobile FAB -->
+<a href="tel:0888282899" aria-label="โทรสั่งน้ำตาลทราย" class="fixed bottom-5 right-5 z-50 w-14 h-14 bg-r text-white rounded-full flex items-center justify-center text-xl shadow-2xl shadow-r/40 hover:scale-110 transition sm:hidden font-bold">&#9742;</a>
+
+<script>
+// Scroll progress
+window.addEventListener('scroll',()=>{const p=window.scrollY/(document.body.scrollHeight-window.innerHeight)*100;document.getElementById('prog').style.width=p+'%'},{passive:true});
+// Reveal
+const o=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('v');o.unobserve(x.target)}}),{threshold:.15});
+document.querySelectorAll('.rv').forEach(e=>o.observe(e));
+// Counters
+function ac(){document.querySelectorAll('[data-c]').forEach(e=>{if(e.dataset.done)return;if(e.getBoundingClientRect().top<innerHeight*.85){e.dataset.done='1';const t=+e.dataset.c,sf=t===40?'+':'',d=1400,s=performance.now();!function k(n){const p=Math.min((n-s)/d,1);e.textContent=Math.round(t*(1-Math.pow(1-p,3)))+sf;p<1&&requestAnimationFrame(k)}(s)}})}
+window.addEventListener('scroll',ac,{passive:true});ac();
+</script>
+</body>
+</html>
